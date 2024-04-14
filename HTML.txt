@@ -1,0 +1,355 @@
+Roll no:46
+
+Hyper Text Markup Language --> HTML
+
+Markup Language :
+		- Tag based language
+		- Designing web pages
+		- Browser is used to run 
+Tag :
+		- < TAGNAME >
+
+-opening tags
+-closing tags
+-self closing tags (Void element)  eg: img , br 
+
+Types of tags 
+.............
+
+HTML :
+		- <html>  ....  </html>
+HEAD :	
+		- <head>  ....  </head>
+
+TITLE :
+		- <title> .... </title>
+
+BODY :
+		- <body> .... </body>
+
+Basic Structure
+................
+
+<html>
+
+ <head>
+ <title>...</title>
+ </head>
+ <body>
+
+ </body>
+</html>
+
+semantics tags
+...............
+		- to optimise the web pages (loading time)
+		1) header tags
+		2) aside tags
+		3) main tags
+		4) footer tags
+
+
+
+Attribute0 = property of a Tag
+
+tags
+....
+1) h1 > to h6 used for creating headings
+2) p  > to creat paragraph
+3) img > to place images
+4) a > provides link (anchor tag)
+5) hr > horizontal line
+
+
+Units
+......
+px > pixels - basic unit
+
+
+Block level element = starts in a new line
+In line elements = starts in same line
+
+homework 
+..........
+diff b/w html & html5
+
+1)video
+2)audio
+3)article tag
+4)progress tag
+5)figure tag
+6)iframe → can used for nesting of websites
+
+
+type of lists
+..............
+1) ol lists 
+	ol , li
+2) unOrdered lists
+	ul , li
+
+Form
+.....
+label tag
+input tag
+textArea tag
+select tag
+button tag
+
+select :  <select>
+            <option value="Python">Pyhon</option>
+            <option value="Flutter">Flutter</option>
+            <option value="MERN">MERN</option>
+        </select>
+
+button types : submit , reset , menu , button
+
+input Types : text , password , email , date , radio , file , number , checkbox
+
+input atrributes : name => for grouping inputs (used in radio types),
+				   placeholder
+
+id & for => connecting lable and input
+
+
+
+.....................................................................................................
+CSS |  for styling web pages
+.....................................................................................................
+
+
+. inline   : <style="property=value color=red"> 
+. internal : <style> 
+			  selector{ property:value; }        
+			  h1{color:red;}
+			 
+			 </style> 
+. external : an external .css file is used & linked to corresponding .html file by using <link> tag 
+			 resuable , less complex , less loading time 
+
+  			 inline > internal > external in basis of priority
+
+
+CSS selectors
+..............
+
+. tag selectors
+. id selector > for unique styling    #idValue{ priority:value;}
+. class selector > group styling      .classValue{ priority:value;}
+. universal selectors > effect the entire document *
+
+CSS box model
+..............
+The box that wrap around each element
+
+. border  - its a invisible line 
+			{ border: width style color }   style = dotted dash solid double groove ridge
+. margine - the gap b\w the border & outerspace 
+			{ margine: top right bottom left } or {margine : top/bottom right/left} -->two values
+. padding - space b\w content & border
+
+
+
+ span tag > in element / inline styling / styling overRiding
+
+ div tag > used to creat division in the web page
+
+
+
+ CDN : content delivery network
+
+
+ vh = view port height | 1vh = 19.2px
+
+ position relative : position at the exact location : every child component will be related to its parent
+
+     display: flex;
+     display: inline-block;	   
+     justify-content: space-between;
+
+
+	pseudo class : defines a special state of an  element
+
+		eg: hover , visited , active , unVisited ..
+
+
+position : absolute =>relative position
+
+position : relative =>absolute position
+
+
+CSS Grid System //rowa&columns
+...............
+display:grid // to create grid to a section
+
+grid-template-column   |   column-gap  
+grid-template-row	   |   row-gap		| for row&column   -> gap // for adding gap
+
+
+frame unit = 1fr==225px
+
+
+ text-align: justify; 
+     space is added between words so that both edges of each line are aligned with both margins.
+
+
+backgroung-image:linear-gradient(direction , color1,color2,,,,,colorN) == for color combination
+
+ANIMATION
+...............
+
+animation:name duration infinity;
+animation-iteration-count:3;
+@keyframes name {
+	10%c{
+		priority: value;
+	}
+
+	60%c{
+		priority: value;
+	}
+}
+
+
+
+
+media-query
+.............
+-to create responsive web page
+
+ @media(expression) {
+	selector {
+		priority:value  |  CSS
+	}
+ }
+
+universal sizes
+..................
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
+
+display:none;  // content is hidden  // content is not rendered
+
+visibility:hidden/visible;  // content is rendered
+
+
+z-index 
+.........
+
+-specifies the stack-order of an element   //LIFO
+-appiled only on the element that have position element(relative , absolute ,fixed)
+-element with higher will be on top
+- values can  be -ve & +ve
+
+Transfrom
+...........
+<!-- appiless 2-D or 3-D transformation to an element  -->
+
+Transfrom:translateX(value)  // content is moved towards x-axix w.r.t it's original position
+
+
+CSS variable 
+.............
+
+used to store values
+ .Global variables - can access throught out the prgm
+
+					declararion //  :root{
+        							  --x:blue
+      								  }
+
+ .Local variables  - can only access in the area where it declared
+ 					declararion //  h1{
+        							  --x:blue     // can only used in h1 tags
+      								  }
+
+ syntax
+ --------
+
+   --variableName : value
+   eg:  
+      --a:5
+
+  how to use //  var(variableName)  // var(a)
+
+
+
+
+  Bootstrap
+  --------------
+
+ Its a populer open source front-end frame work developed by twitter
+ Its a collection of html,css and javascript
+ some predefined classes are there for bootsrap
+ Framework---------------work within a frames
+ Features-----------------Responsive designing-Grid System-Pre-styled components
+     eg:buttons,forms,nav bar,....etc-Javascript Pluggings
+     eg:kerosils, modals-Customaization
+ There are two ways for include Bootstrap in our pgm
+ 1)Downloading
+ 2)CDN
+ *Downloading is the better approch
+ Predefined Classes------------------
+1.Container   - it gives margin both left and right sides
+ 2.Container-Fluid-it gives 100% width
+ 3.colours-8 colours
+    1.Primary-blue colour
+    2.Danger-Red
+    3.Success-green
+    4.warning-orange
+    5.dark-black
+    6.secondary-grey
+    7info-light blue
+    8.light-white
+ 4.Border-to create a border 
+   border-colour  -toset border colour
+   border-1to5  -to set border width  (1-4px,2-8px,3-16px,4-24px,48px)
+   border-top,border-bottom,border-start,border-end -to set border on one side,-0
+ used when not need one side of border
+ 5.rounded-toprovide border radious
+   rounded values  1-5 
+   set for one side likely border
+   border-circle,pill,
+ 6.margin- to provide margin, m class is used(1-5), auto(fix margine accordingly 
+available space
+  mt,ms,me,mb  mx-left&right my-top&bottom
+ 7.padding- to provide padding, p class is used(1-5), auto(fix padding accordingly
+ available space
+  pt,ps,pe,pb  px-left&right py-top&bottom
+ 8.fontsize- fs class is used
+1-5    
+1 is larger
+ 9.width- w 25 50 75 100 auto
+
+
+
+
+task
+......
+ Modal
+ offcanvas
+ navbar
+
+
+ Bootstrap grid system 
+ ----------------------
+
+ class= row / col is used
+
+ class=row // 12 basic columns are created

@@ -1,0 +1,29 @@
+img{
+    padding: 3px;
+
+}
+.row1{
+    width: 678px;
+    height: 452px;
+}
+
+.row2{
+    width: 462px;
+    height: 352px;
+}
+
+.row3{
+    height: 100px;
+    width: 200px;
+}
+
+.maps{
+    height: 250px;
+    width: 400px;
+}
+
+.shorts{
+
+    width: 300px;
+    height: 600px;
+}

@@ -1,0 +1,100 @@
+
+header {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    margin-top: 7%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 340px;
+    height: 368px;
+    /* background-color: rgb(139, 163, 163); */
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+form{
+    margin:0% 6% ;
+    padding: 3%;
+    background-color: hwb(0 90% 7% / 0.88);
+    border: 2px black solid;
+    border-radius:5px ;
+}
+
+.forgotPassword {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    padding: 0px;
+
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: whitesmoke;
+    background-color: rgb(58, 200, 58);
+    border-radius: 5px;
+    padding: 0px;
+}
+
+
+.card-footer {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin:3% 6% ;
+    /* padding: 3%; */
+    text-align: center;
+    border: 2px black solid;
+    border-radius:5px ;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;   
+}
+
+.footerLink{
+    margin: 0px 7px;
+}

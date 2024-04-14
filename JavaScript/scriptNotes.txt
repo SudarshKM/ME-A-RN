@@ -1,0 +1,200 @@
+JAVASCRIPT  
+-------------
+- dynamically typed language
+- can be used in both frontend & backend
+- frontend - Behaviour
+- backend  - logical operation
+
+- single thread programming - line by line execution
+
+- NODE JS : it's an open source js environment that executes js code outside the web browser
+
+- extension - filename.js
+
+
+display
+........
+ 
+  console.log(content)
+
+  dataTypes
+  ----------
+
+  primitive dataTypes
+  . string
+  . number
+  . boolean
+  . bigInt  : numbers larger than 2**53  & numbers less than -2**53 
+  . undefined : variable declared - values are not assigned
+  . null : let x = null ;
+  . symbol - unique identifier
+
+  non -primitive dataTypes : combination of primitive dataTypes
+  .object : vlues are stored as "key:value" pair
+
+
+  typeof()
+
+  variables
+  ----------
+  - used to store data
+
+  identifier : rules to create variables
+
+            it can be started with alphabets , $ , underscore _
+            first character can be followed by alphabets , $ , underscore & digits
+            digits can not be placed as the first character
+            can use more than one word : words should not have space in b\w
+
+    syntax
+    ........
+    variable_name = value;
+    keyword variable_name = value;
+
+    keyword
+    ......... 
+    . const : re-assigning is not posiible / functional scope  / Hoisting is not posiible
+    . var   : re-assigning is posiible    / functional scope  / Hoisting is posiible
+    . let   : re-assigning is posiible   / block level scope / Hoisting is not posiible
+
+
+ variable Hoisting - using a variable before it is declared 
+
+ concatination - adding two dataTypes
+ ...............
+
+    string + string = string
+    string + number = string
+    number + number = number
+
+Template Literals  
+....................
+- another way of displaying content
+syntax:
+        `content ${variable_name}`
+
+
+operators
+..........
+. assignment operator // "="
+
+. arithmetic operators // + , - , * , / , % , **
+
+. relational operators / returns boolean value / > , < , <= , >= , == , === 
+                                            
+                                              === : value & dataType are checked
+                                              eg . x= 10 = y='10'
+
+                                                  x===y : false
+
+. logical operators / AND(&&) , or (||) , not(!)
+
+. increment & decrement operators / ++ , --
+
+. short hand operator 
+                x=x+y 
+                x+=y
+        
+. ternary operator
+                condition? true_Statement : false_Statement
+
+
+Decision making statement
+----------------------------
+. if else
+                if(condition) {
+                        statement;
+                }
+                else {
+                        statement;
+                }
+
+ 
+
+
+ loop statement
+ ---------------
+
+. while (condition) {
+        statement
+        exit condition
+  }
+
+. for (variable initialization ; condition ; exit condition) {
+        statement;
+}
+
+
+
+1) Function
+-----------
+
+variables inside a fn have block-level scope
+
+return : no statement after the return will be executed --> return should be last statement of the fn
+
+functional Hoisting (calling before the fn is defined) is possible -Normal fn-
+
+
+2) Arrow Function
+-----------------
+-ES6 - js
+-functional Hoisting (calling before the fn is defined) is not possible -Arrow fn-
+
+syntax
+
+        const variable = (arguments) => {
+                statement;
+        }
+
+
+fn call //  
+
+        variable(arguments);
+
+
+
+3) pre-defined / build-In Functions
+----------------------------------
+
+eg: console.log()
+    typeof()
+    Math.floor()
+    Number()
+    Alert()
+    eval()
+
+
+
+4) call back Functions
+----------------------
+- Function calling another function
+- function is passed as argument of another function
+
+
+5) nested Function
+----------------------
+-function defined inside another function
+-closure property : variables declared in parent fn can be accessed by child fn , but not vice versa
+
+
+
+- asynchronous Functions - fn with time delay | eg: setTimeout() , API call
+-  synchronous Functions - fn with out time delay  
+-    anonymous Functions - function with out name 
+
+
+
+Array
+----------
+reduce()   : returns a single value 
+  
+filter()   : it returns an array satisfying a specific condition
+  
+some()     : it returns true or faulse based on the condition applied to an array
+  
+find()     : it returns the first element that satisfying the condition
+
+includes() : to check an element present in the array or not
+
+indexof()  : to find index of an element

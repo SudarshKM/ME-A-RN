@@ -1,0 +1,317 @@
+*{
+    /* font-size: large; */
+    font-family: "Anta", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* #home{
+    
+        margin: 13% 8% 0 8%;
+
+} */
+/* .anta-regular {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+.container{  
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+     /* position at the exact location */
+} 
+
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+
+    align-items: center;  /*item are placed vertically in center  */
+}
+/* .list{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+} */
+
+
+#logo{
+    /* height: 20px; */
+    width: 130px;
+}
+
+
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.link:hover {
+    color: red;
+}
+
+/* #home{
+    display: flex;
+} */
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title h1{
+    font-size: 53px;
+    margin-bottom: 25px;
+}
+
+#lastName{
+    color: orange;
+}
+
+.download{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 3px;
+    /* left: 20px; */
+    bottom: 0px;
+}
+
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%); 
+    /* removing scroll effect by nulllifying left 50% effect */
+    transition: bottom 1s, left 2s;
+    /* for smooth transition */
+    
+}
+
+.images:hover #girl{
+    left: 40%;
+}
+
+.images:hover #shape{
+    bottom: 50px;
+}
+
+
+
+/* about */
+
+#about{
+    margin: 20% 8% 0 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 35px;
+}
+
+.heading span{
+    font-size: 25px;
+    color: green;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr); 
+                                             /* 1fr==225px */
+    gap: 30px;
+}
+
+
+.about-image img {
+    width: 80%;
+}
+
+.about-details {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    /* space is added between words so that both edges of each line are aligned with both margins. */
+}
+
+.about-details p {
+    text-align: justify; 
+
+}
+
+.information {
+    margin-top: 30px;
+
+}
+
+.infobox {
+    margin-bottom: 20px;
+}
+
+.infobox span {
+    margin-left: 15px;
+}
+
+
+/* skill */
+
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 2rem;  /* 1rem==16px */
+       
+    margin-top: 70px;
+}
+
+.skills-img img {
+    width: 90%;
+}
+
+.bar-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    margin-bottom: 2rem;
+    align-items: center;
+
+}
+
+.bar-container span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bar-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.bar-container #html , #js , #css ,#react {
+    background-color: orange;
+
+}
+
+#html{
+    width: 95%;
+}
+
+#css {
+    width: 88%;
+}
+
+#js {
+    width: 89%;
+}
+
+#react {
+    width: 85%;
+}
+
+.iconset{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+}
+
+.icon , .up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.icon i{
+    font-size: 28px;
+    color: black;
+}
+
+
+.icon:hover{
+    background-image: linear-gradient(to top left , #ff9100 , yellow);
+    /* background-color: orange; */
+    
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 50px 0px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.up-arrow {
+    float: right;
+    background-image: linear-gradient(to top left , #ff9100 , yellow);
+   
+}
+
+.up-arrow:hover i{
+    color: white;
+}
+

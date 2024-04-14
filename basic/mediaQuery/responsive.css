@@ -1,0 +1,46 @@
+@media(max-width:600px) {
+    p {
+        color: red;
+        font-size: 50px;
+    }
+}
+/* 
+max 768
+min 768 */
+
+img {
+    /* display: none; */
+    visibility: hidden;
+}
+
+@media(max-width:768px) {
+
+    div{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .img1 {
+        /* display: block; */
+        visibility: visible;
+    }
+}
+
+
+@media(min-width:768px) {
+
+    div{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    .img1 {
+        /* display: block; */
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+body {
+    background-color: blueviolet;
+}
+

@@ -1,0 +1,31 @@
+p{
+    color: rgb(70, 70, 22);
+}
+/* span{
+    color: cadetblue;
+    font-size: 40px;
+} */
+
+*{
+    font-size: 30px;
+}
+
+.p1{
+ margin: 50px 100px 0px 100px;
+ text-align: center;
+}
+
+
+#A{
+color: blue;
+}
+#B{
+    color: red;
+}
+
+#C{
+    color: green;
+}
+#D{
+    color: rgba(158, 136, 9, 0.952);
+}

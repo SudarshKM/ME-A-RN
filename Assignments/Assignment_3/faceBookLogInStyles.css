@@ -1,0 +1,106 @@
+body{
+    margin: 0%;
+}
+
+
+:root{
+    --color1:#43766C;
+    --color2:#F8FAE5;
+    --color3:#B19470;
+    --color4:#76453B;
+}
+
+.kalnia-dosa {
+    font-family: "Kalnia", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    color: whitesmoke;
+    font-size: 40px;
+  
+  }
+  
+
+
+p{
+    text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0%;
+}
+
+.firstHalf{
+    background-color:#43766C;
+    height: 600px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+form{
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin:0% 6% ;
+    padding: 3%;
+}
+
+.card{
+    margin-top: 30px;
+    width: 398px;
+    height: 314px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* box-shadow: 40%; */
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+
+
+input{
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    padding: 0px;
+    
+}
+button{
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: whitesmoke;
+    background-color:#43766C;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+a{
+    color:  #43766C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    text-align: center;
+    /* margin: 0px 7px; */
+}
+
+.link a{
+    margin: 0px 4px;
+}

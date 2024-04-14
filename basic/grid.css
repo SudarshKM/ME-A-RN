@@ -1,0 +1,15 @@
+div div {
+    border: 1px solid red;
+    text-align: center;
+    
+}
+
+div{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    /* grid-template-rows: 50px  50px  ; */
+    /* row-gap: 30px;
+    column-gap: 30px; */
+    gap: 5px;
+}

@@ -1,0 +1,131 @@
+div{
+    height: 50px;
+    width: 50px;
+    color: royalblue;
+    /* background-color: rgb(121, 151, 121); */
+    
+
+    /* border: 1px solid red; */
+}
+
+#B{
+    background-color: green;
+
+    margin: -60px 65px;
+}
+#C{
+    background-color: green;
+
+    margin: -60px 130px ;
+}
+/* ................................................................................................... */
+ 
+#r1c1{
+
+    background-color: green;
+    margin-left:110px ;
+
+}
+#r1c2{
+    background-color: brown;
+    margin: -50px 165px;
+}
+
+#r1c3{
+    background-color: blue;
+    margin: -50px 220px;
+}
+
+#r1c4{
+    background-color: blueviolet;
+    margin: -50px 275px;
+}
+
+#r1c5{
+    background-color: cadetblue;
+    margin: -50px 330px;
+}
+
+#r1{
+ padding: 5% 35%; 
+}
+
+#r2c1{
+    background-color: aqua;
+    margin: 55px 55px;
+}
+
+#r2c2{
+    background-color: yellowgreen;
+    margin: -105px 110px ;
+}
+
+#r2c3{
+
+    background-color: rgb(80, 248, 13);
+    margin: 55px 165px;
+}
+
+#r2c4{
+    background-color: tomato;
+    margin: -105px 220px;
+}
+
+#r2c5{
+    background-color: cornflowerblue;
+    margin: 55px 275px;
+}
+#r2c6{
+    background-color: darkgoldenrod;
+    margin: -105px 330px;
+}
+
+#r2c7{
+    background-color: violet;
+    margin: 55px 385px;
+}
+
+
+
+#r3c1{
+    background-color: teal;
+    margin: -50px 0px;
+}
+
+#r3c2{
+
+    background-color: chocolate;
+    margin: 0px 55px;
+}
+#r3c3{
+    background-color: rgb(118, 23, 207);
+    margin: -50px 110px;
+}
+
+#r3c4{
+    background-color: cadetblue;
+    margin: 0px 165px;
+}
+
+#r3c5{
+    background-color: yellow;
+    margin: -50px 220px;
+}
+
+#r3c6{
+    background-color: steelblue;
+    margin: 0px 275px;
+}
+
+#r3c7{
+    background-color: chocolate;
+    margin: -50px 330px;
+}
+#r3c8{
+    background-color: cyan;
+    margin: 0px 385px;
+}
+#r3c9{
+    background-color: crimson;
+    margin: -50px 440px;
+}

@@ -1,0 +1,19 @@
+*{
+    background-color: aquamarine;
+}
+
+h4{
+    color:chocolate;
+    font-size: 25px;
+}
+#para1{
+    color: cadetblue;
+}
+#para2{
+    color: burlywood;
+}
+
+.paragraph{
+    color: red;
+    background-color: blanchedalmond;
+}
