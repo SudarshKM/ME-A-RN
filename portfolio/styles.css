@@ -1,0 +1,86 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5214460784313726) 15%, rgba(65,185,52,0.2805497198879552) 46%, rgba(25,33,24,0.3561799719887955) 83%);
+}
+
+.gradient2{
+    background: rgb(19,7,12);
+    background: linear-gradient(90deg, rgba(19,7,12,0.7595413165266106) 0%, rgba(41,46,44,0.8379726890756303) 39%);
+}
+
+.gradient3 {
+    background: rgb(95,89,106);
+    background: linear-gradient(90deg, rgba(95,89,106,0.8127626050420168) 0%, rgba(57,122,26,0.3925945378151261) 50%, rgba(31,87,67,0.4066001400560224) 87%);
+    }
+.gradient4 {
+    background-color: rgb(3, 83, 67);
+    opacity: 0.66;
+ }
+
+
+
+
+
+.exo-2-font {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* navBar  */
+nav{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 7px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* home */
+
+.home{
+    height: 750px;
+    
+}
+
+.homeImg {
+  --a: 8deg; /* control the angle of rotation (the smaller, the better) */
+  
+  border-radius: 20px;
+  transform: perspective(900px) rotate3d(var(--r,1,-1),0,calc(var(--i,1)*var(--a)));
+  /* -webkit-mask: 
+    linear-gradient(135deg,#000c 40%,#000,#000c 60%)
+    100% 100%/250% 250%; */
+  transition: .4s;
+  cursor: pointer;
+}
+
+img:hover {
+  --i: -1;
+}
+
+/* about  */
+
+.about{
+    height: 800px;
+    
+}
+
+/* skills */
+
+.skills{
+    width: 100%;
+    /* height: 500px; */
+}
+
+.card-text{
+    height: 230px;
+}
+
+.card-text{
+    text-align: justify;
+}
+
