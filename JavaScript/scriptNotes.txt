@@ -211,3 +211,15 @@ STRING
 2) endsWith()    : to check whether the given string ends with perticular characters.
                  : case sensitive 
                  : returns boolean values 
+
+3) toUpperCase() : to convert the given string into capital letter.
+
+4) toLowerCase() : to convert the given string into small letter.
+
+5) trim()        : to remove blank space at the ends.
+
+6) substring()   : to create a substring from a given string
+
+        array.substring(startingIndex , endingIndex)
+
+         - endingIndex is excluded
