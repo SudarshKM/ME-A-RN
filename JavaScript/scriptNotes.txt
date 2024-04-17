@@ -198,3 +198,16 @@ find()     : it returns the first element that satisfying the condition
 includes() : to check an element present in the array or not
 
 indexof()  : to find index of an element
+
+
+
+STRING 
+-------
+
+1) startsWith()  : to check whether the given string starts with perticular characters.
+                 : case sensitive 
+                 : returns boolean values
+
+2) endsWith()    : to check whether the given string ends with perticular characters.
+                 : case sensitive 
+                 : returns boolean values 
