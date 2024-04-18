@@ -223,3 +223,35 @@ STRING
         array.substring(startingIndex , endingIndex)
 
          - endingIndex is excluded
+
+
+7) slice()
+
+8) split()       : divides the given string into substring based on perticular value
+                 : returns an array
+
+9) replace('searchvalue','replacevalue')
+                 : only the first matching word is replace
+                
+10) replaceAll('searchvalue','replacevalue')
+                 : all matching word is replaced
+
+
+11) Array.from() : given string is splited in to letters & returns an array
+
+
+
+object
+-------
+
+  - is also used to store more than one data with more clarity
+  - is a single variable that can hold more than one data of different dataTypes as key:value pairs that are seperated by commas & enclosed with in curly brackets
+
+  syntax :
+                objectname {
+                        key:value,
+                        key:value,
+                        ---------,
+                        ---------
+                }
+        
