@@ -255,3 +255,13 @@ object
                         ---------
                 }
         
+
+
+adding new key : value into an object
+
+   object["key"] = value
+
+
+delete a property from an object
+
+   delete emp.key;   // returns boolen value console.log(delete emp.key)
