@@ -199,6 +199,23 @@ includes() : to check an element present in the array or not
 
 indexof()  : to find index of an element
 
+slice(2,4)    : lists out items from posititon 2 to 4
+
+splice(2,4,item) : add/remove 4 items from posititon 2 to rightside & adds an item at posititon 2  
+                 : modifies the original array
+
+sort((a,b)=>a-b) : modifies the original array
+
+concat()   : a.concat(b)
+           : does not modifies the original array
+
+join(" & ")     : array as string , '&' is in between each element
+
+
+fill(0,1,3)     : fill  array with a value = 0 from pos 1 to 3 (3 is excluded)
+                : original array is modified
+
+reverse()  : array.reverse(); modifies the original array
 
 
 STRING 
