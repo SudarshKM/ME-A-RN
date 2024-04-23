@@ -6,159 +6,149 @@ B:'b',
 C:'c'
 }
 console.log(Object);
-
-console.log(Object['B']);  
-
-// type of key == string
+console.log(Object['B']);
 
 console.log(typeof(Object));
 
-console.log(Object.B);
+console.log("--------------------------------------------");
+
+//w.a.p to find the first recursive letter - B
+
+pattern = "aabb";
 
 
-//------------------------------------------------------------------------------
-//accessing keys in an object  :   type of key == string
+console.log(pattern.split("").find((c1,c2) => c1=c2));
 
 
-console.log('----------------------keys in an object  ------------------------');
+count={};
 
-                    // in method is used to follow the keys in the object
+charcter = Array.from(pattern);
 
-
-        for (const key in Object) {
-            console.log(key); 
-        }
-
-
-
-//w.a.p to check whether emplocation key is presents in the given object
-
-emp = {
-    emplocation :"kochi",
-}
-
-
-
-for (const key in emp) {
-    if (emp.emplocation) {
-       console.log("true");        
+for(char of charcter) {
+    if (count[char]) {
+        console.log(char);
+        break;
+    } else {
+        count[char]=1;
     }
-
-    else{ console.log("false");}
 }
 
-//-------------------------------------------------------------------------------
 
-if('emplocation' in emp) {
-    console.log('present');
 
+
+// pattern.split("").forEach(item => { if (count[item]) {
+//     count[item]++;
+//     console.log(count[item]);
+//     break;
+// } else {
+//     count[item]=1;
+// }
+    
+// });
+
+
+console.log("--------------------------------------------");
+
+
+weatherData=[
+    {district:'Thrissur',weather:32},
+    {district:'Kottayam',weather:29},
+    {district:'Palakkad',weather:34},
+    {district:'Ernakulam',weather:33},
+    {district:'Thrissur',weather:29},
+    {district:'Kottayam',weather:30},
+    {district:'Palakkad',weather:32},
+    {district:'Ernakulam',weather:31}
+]
+//print district with its highest temparature
+//output: {Thrissur:32, Kottayam:30,Palakkad:34,Ernakulam:33}
+
+
+
+// 
+
+s = weatherData.sort((a,b)=> b.weather-a.weather);
+// console.log(s);
+
+console.log(s.find(dist => dist.district=="Thrissur"));
+console.log(s.find(dist => dist.district=="Kottayam"));
+console.log(s.find(dist => dist.district=="Palakkad"));
+console.log(s.find(dist => dist.district=="Ernakulam"));
+
+
+//create an out put object
+wd={};
+//access each item in wheaterData array
+for(data of weatherData) {
+    district = data.district;
+    currentTemp = data.weather;
+    //check district is in there in the output object
+    if (district in wd) {
+        oldTemp=wd[district]
+        //compare the temperature
+        if (oldTemp>currentTemp) {
+            wd[district]=oldTemp;
+        } else {
+            wd[district]=currentTemp;
+        }
+    } else {
+     wd[district]=currentTemp;   
+    }
 }
 
-else {
-    console.log('not present');
-}
+console.log(wd);
 
-//-------------------------------------------------------------------------------
+console.clear();
 
-console.log(` key is ${'emplocation' in emp ? 'present' : 'not present'}`);
+console.log("--------------------------------------------");
 
+products=[
+    {pid:100,pName:'apple',brand:'5g',price:120000,display:'led'},
+    {pid:101,pName:'samsaung',brand:'5g',price:45000,display:'led'},
+    {pid:102,pName:'blackberry',brand:'4g',price:50000,display:'led'},
+    {pid:103,pName:'nokia',brand:'3g',price:1200,display:'lcd'},
+    {pid:104,pName:'motorola',brand:'4g',price:10000,display:'lcd'}
+]
 
+//1. print product name only
 
+console.log("-------------------print product name only-------------------------");
 
-console.log('------------------------------------------------------------------------');
+products.forEach(item=>console.log(item.pName));;
 
+//2. print all mobile details whose display is lcd
+console.log("-----------------print all mobile details whose display is lcd---------------------------");
 
-// adding new key : value into an object
+console.log(products.filter(item=>item.display=='lcd')
+);
+//3. print 5g mobile phone name
+console.log("--------------------print 5g mobile phone name------------------------");
 
-   //object["key"] = value
+brand5g=products.filter(item=>item.brand=='5g');
+brand5g.forEach(item=>console.log(item.pName));;
+//4. sort mobile based on price
 
-// delete a property from an object
-
-    //delete emp.key;
-
-
-//add experience to the given object
-
-emp["experience"]=3;
-
-console.log(emp);
-
-console.log('------------------------------------------------------------------------');
-
-//check gender key in the given object:emp . if present print 'yes' else add gender key to the given object with value as male
-
-
-if ('gender' in emp) {
-    console.log("gender key is present");
-} else {
-    emp["gender"] = 'male';
-    console.log("added gender key");
-}
-
-console.log(emp);
-
-delete emp.gender;
-
-console.log('------------------------------------------------------------------------');
+console.log("-------------------sort mobile based on price-------------------------");
 
 
-'gender' in emp ? console.log('present') : (emp["gender"] = 'male' , console.log(emp));
-
-
-console.log('--------------------------------update----------------------------------------');
-
-
-//update an object
-emp["gender"]='female';
-
-console.log(emp.gender);
-
-console.log('--------------------------------delete----------------------------------------');
-
-
-// delete a property from an object
-
-    //delete emp.key;
-
-    delete emp.gender
-// console.log( delete emp.gender);
-
-
-console.log(emp);
+s = products.sort((a,b)=>a.price-b.price).forEach(item=>console.log(item.pName));
 
 
 
-console.log('-------------------------- car ----------------------------------------------');
+
+//5. print costly mobile
+
+console.log("-------------------print costly mobile-------------------------");
+
+s = products.sort((a,b)=>b.price-a.price);
+
+console.log(s[0].pName);
 
 
-//w.a.p to print model and manufacture name of the given car 
-
-//w.a.p to add varient key to the car object with value as 'manuel'
-
-//w.a.p to add a new value 'automatic' to the key varient
-
-//w.a.p to add a ney key as 'color' with value as red , blue and white
+//6. print low cost mobile
+console.log("-------------------print low cost mobile-------------------------");
 
 
-car = {
-    model : 'suv' ,
-    name  : 'fortuner',
-    manufacture : 'Toyota'
-}
+lowcost = products.reduce((c1,c2)=> c1.price<c2.price ? c1 : c2);
 
-console.log(car);
-
-car['varient'] = ['Manuel'];
-
-console.log(car);
-
-car.varient.push('Automatic');
-
-console.log(car);
-
-car.color = ['blue' , 'red' , 'white'];
-
-console.log(car);
-
-
-console.log(car.color['2']);
+console.log(lowcost.pName);
