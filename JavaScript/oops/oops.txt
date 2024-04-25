@@ -21,7 +21,19 @@
       //  methodes
 
       //  constructor () {}   //used to initial values to property
+                              //also a methode
+                              //class itself-no need to call contructor(), invokes automatically
     }
-
+  
 
     its not mandatory that all the three , that is property , methodes & constructor should always present inside a class
+
+    - instance variable (this.variableName) 
+                in order to access properties inside a class
+
+
+    object
+    -------
+    const objectName = new Classname()
+
+    objects are used inorder to acess properties or methodes out-side the class
