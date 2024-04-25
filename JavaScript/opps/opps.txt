@@ -1,0 +1,27 @@
+
+
+- modern programming paradigm which is consider real time entity into object & class
+
+- class :blue print which contains common features from which different object can be create.
+
+- object : are the real time entities that are created from the class.
+
+- reference : the memory location where the properties and methodes are stored.
+
+    property : variable inside a class.
+    methode  : functions inside a class.
+
+    syntax
+    -------
+
+    class Classname {
+
+      //  property
+
+      //  methodes
+
+      //  constructor () {}   //used to initial values to property
+    }
+
+
+    its not mandatory that all the three , that is property , methodes & constructor should always present inside a class
