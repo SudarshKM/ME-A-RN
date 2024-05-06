@@ -229,7 +229,7 @@ console.log('------------reverse-------------');
 
 str = "abcd";
 
-console.log([...n].reverse());
+console.log([...n].reverse());  //creating a new array for not modifying the the current array
 
 console.log(n);
 

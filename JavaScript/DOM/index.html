@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 class="group1">Javascript in frontend</h1>
+    <h1 id="dom">DOM</h1>
+
+    <p class="group1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, at assumenda autem dignissimos, dolores eveniet nesciunt quia excepturi aspernatur vel incidunt est voluptatum reprehenderit animi ab laudantium ea perspiciatis. Illo.</p>
+    <button onclick="change()">Click</button>
+
+
+
+
+<script>
+    let content1 = document.getElementsByTagName("h1");
+
+    console.log(content1[0]);
+
+    let content2 = document.getElementById("dom");
+
+    console.log(content2);
+
+
+    let content3 = document.getElementsByClassName("group1");
+
+    console.log(content3);
+
+    let content4 = document.querySelector(".group1");
+
+    console.log(content4);
+
+
+    let content5 = document.querySelectorAll(".group1");
+
+    console.log(content5);
+
+    content5[1].innerHTML="paragraph";
+
+
+    function change() {
+        dom.textContent="directly select with id";
+        dom.style.color="red"
+
+    }
+
+</script>
+
+</body>
+</html>
