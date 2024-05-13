@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header  style="width: 100%; height: 400px; background-image: url('https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg');" >
+        <!-- <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div> -->
+          <nav class="navbar bg-transparent">
+            <div class="container-fluid">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-bars fa-2x mx-3 text-light"></i>
+                <span class="text-light fs-3">DashBoard</span>
+            </a>
+            <div>
+                <span class="text-light fs-3 me-3" onclick="logout()"><i class="fa-solid fa-power-off me-2"></i>Logout</span>
+            </div>
+            </div>
+          </nav>
+    </header>
+    <div>
+        <h1 class="mt-5 text-center">Welcome <span id="username" class="text-danger">User</span></h1>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et corrupti natus alias numquam possimus id unde, dolores dignissimos, quaerat aperiam repellat. Fuga perferendis commodi neque alias minus veniam labore nobis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores rem similique veritatis. Laborum libero itaque deserunt ipsam accusamus ut laudantium veritatis velit dolorem unde officiis, at ipsa doloremque adipisci molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laboriosam assumenda, ipsa aspernatur omnis placeat fuga tempore a neque quidem, provident quis iste aliquid illum. Non totam voluptatem minima doloremque.</p>
+    </div>
+</body>
+
+<script>
+
+  let user = localStorage.getItem("user");
+  console.log(user); 
+
+if(!user){
+  window.location ="login.html"
+
+} 
+else{
+  username.innerHTML = user;
+
+}
+
+  function logout() {
+    localStorage.removeItem("user")
+    window.location ="login.html"
+  }
+
+</script>
+</html>
