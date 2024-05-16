@@ -659,3 +659,49 @@ response status
 3)3xx series - redirection
 4)4xx series - client side error []
 5)5xx series - server side error []
+
+
+
+
+
+refer
+---------
+SOAP architecture, RPC architecture
+
+API testing tool
+----------------
+- Thunder cleint - extension of vs code
+- Postman - real tool for testing API
+
+how to create an API
+-------------------------
+1) AJAX - Asynchronous JavaScript XML
+   - XMLHTTPREQUEST class used
+   - open() - API connnection establishes
+   - send() - used to send the request
+   -readystates - is the property inside the class which value wil change from 1-4
+                -this change can be seen using onreadystatechange function
+	        -response will only be obtained when the value of readystate reaches 4
+  -responseText - is a property in the class where we get the data
+
+2) FETCH - promise class
+         - to resolve Asynchronous function
+	     - ES6 - js version
+	     request states
+	     --------------
+	     - resolve   .then()
+	     - reject    .catch()
+	     - pending   not resolved & not rejected
+
+
+3) ASYNC AWAIT
+		 - it makes the promise wasier to written
+		 - .then() is used only once
+		 - can store data into a variable
+		 - async - makes the function return promise (function inside which the api call fn is written)
+		 - await - makes the function pause the execution and wait for a resolved promise before it continues. (before the api call fn)
+		 - it avoida all call back hell.
+		 - await should always written inside the aside function
+
+Q . How JavaScript handles Asynchronous & Synchronous function being a single thread programming language
+
