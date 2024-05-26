@@ -15,8 +15,8 @@ background: linear-gradient(90deg, rgba(2,0,36,0.742734593837535) 0%, rgba(9,9,1
   
      <div class="w-100 d-flex justify-content-center align-items-center" style="height: 300px;">
          <form action="" class="">
-            <input class="form-control" type="text" placeholder="Country">
-            <button class="btn btn-success mt-1 w-100">View Details</button>
+            <input id="country" class="form-control" type="text" placeholder="Country">
+            <button  type="button" class="btn btn-success mt-1 w-100" onclick="search()">View Details</button>
          </form>
 
         
@@ -24,23 +24,112 @@ background: linear-gradient(90deg, rgba(2,0,36,0.742734593837535) 0%, rgba(9,9,1
 
     <div class="w-100 d-flex justify-content-center align-items-center">
 
-        <div class="card" style="width: 28rem;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIyYqOBqZqExMtL_yXEPmRgH-2NciIa9or4k-sz37&s" class="card-img-top" alt="...">
-            <div class="card-body">
-            </div>
-            <ul class="list-group list-group-flush " >
-             <li class="list-group-item"><h5 class="card-title">Country</h5> </li> 
-              <li class="list-group-item">Capital:</li>
-              <li class="list-group-item">Population:</li>
-
-              <li class="list-group-item">Currency:</li>
-              <li class="list-group-item">Capital:</li>
-              <li class="list-group-item">Population:</li>
-
-              <li class="list-group-item">Currency:</li>
-            </ul>
+        <div id="result" class="card" style="width: 28rem;">
+           
             
           </div>
     </div>
 </body>
+
+
+
+<script>
+
+   search = async () => {
+    let countryName = country.value;
+
+    console.log(countryName);
+
+    if(countryName) {
+      const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
+
+      // console.log(response);
+
+      response.json().then((data)=>{
+        
+        console.log(data[0]);
+
+        var common = data[0].name.common;
+        var official = data[0].name.official;
+        var capital = data[0].capital[0];
+        var borders = data[0].borders;
+        var area = data[0].area;
+        var gmap = data[0].maps.googleMaps;
+        var population = data[0].population;
+        var timezone = data[0].timezones;
+
+        console.log(`timeZone:${timezone}`);
+      
+        var continents = data[0].continents;
+        var flag = data[0].flags.png;
+        var counntryCode = data[0]
+        //languages
+        national_languages =[];
+         for(let lang in data[0].languages) {
+          national_languages.push(data[0].languages[lang]);
+
+         }
+
+         console.log(national_languages);
+
+         //corrency
+
+         for (let currency in data[0].currencies) {
+
+           var currencyName = data[0].currencies[currency].name;
+           var currencySymbol = data[0].currencies[currency].symbol;
+
+          //  console.log(typeof(currency));
+         }
+
+         console.log(currencyName , currencySymbol);
+
+        console.log(common ,official , capital,borders ,area , gmap ,population ,timezone ,continents ,flag);
+
+        console.log(counntryCode);
+
+
+
+
+    result.innerHTML = ` <img src="${flag}" class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <ul class="list-group list-group-flush " >
+             <li class="list-group-item"><h5 class="card-title">commonName:${common}</h5> </li> 
+              <li class="list-group-item">${common}</li>
+              <li class="list-group-item">Population:</li>
+
+              <li class="list-group-item">Currency:</li>
+              <li class="list-group-item">Capital:</li>
+              <li class="list-group-item">Population:</li>
+
+              <li class="list-group-item">Currency:</li>
+            </ul>`
+      })
+     
+    }
+    else console.log("Enter a valid input");
+
+
+  }
+</script>
 </html>
+
+<!-- 
+ commonName
+ official name
+
+Currency name symbol
+Capital
+languages
+borders
+area
+maps google maps
+
+Population
+
+time zone 
+
+continents
+
+falg png -->
